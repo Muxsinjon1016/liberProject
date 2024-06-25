@@ -1,17 +1,24 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import { MainLayout } from "./layouts/mainLayout";
+import { NavBar } from "./components/main/navbar";
+import { Hero } from "./components/main/hero";
+import { Services } from "./components/main/services";
+import { Cartegories } from "./components/main/cartegories";
+import { News } from "./components/main/news";
+import { Audios } from "./components/main/audios";
 
 function App() {
   return (
     <>
-      <p className="text-blue-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cumque
-        ipsum praesentium fugiat aliquam. Qui aliquam natus optio. Aspernatur
-        beatae placeat culpa! Minus quam adipisci similique, placeat nam
-        voluptate quaerat?
-      </p>
+      <MainLayout>
+        <NavBar />
+        <Hero />
+        <Services />
+        <Cartegories />
+        <News />
+        <Audios />
+      </MainLayout>
     </>
   );
 }
